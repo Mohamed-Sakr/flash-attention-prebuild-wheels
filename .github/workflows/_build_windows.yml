@@ -48,9 +48,10 @@ jobs:
         shell: pwsh
         run: git config --system core.longpaths true
 
-      # Install Python using uv because setup-python needs newer version of glibc
+      # Install Python using uv (your preferred setup)
       - name: Install uv
         uses: astral-sh/setup-uv@v7
+
       - name: Install Python
         shell: bash
         run: |
